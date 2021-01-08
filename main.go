@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-	setupHTTPHandlerAndRun()
-	//setupGinHandlerAndRun()
+	//setupHTTPHandlerAndRun()
+	setupGinHandlerAndRun()
 }
 
 func setupHTTPHandlerAndRun() {
