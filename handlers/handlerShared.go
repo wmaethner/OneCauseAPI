@@ -17,7 +17,15 @@ func ValidateLoginPost(body io.ReadCloser) models.Response {
 	resp := models.Response{
 		Result:       result,
 		ErrorMessage: err,
+		RedirectURL:  redirectURL(result),
 	}
 
 	return resp
+}
+
+func redirectURL(loginResult bool) string {
+	if loginResult {
+		return "http://onecause.com"
+	}
+	return ""
 }

@@ -10,4 +10,5 @@ type Credentials struct {
 type Response struct {
 	Result       bool
 	ErrorMessage string
+	RedirectURL  string
 }
